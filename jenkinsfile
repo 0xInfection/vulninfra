@@ -1,0 +1,33 @@
+pipeline {
+    agent {
+      node {
+        label 'dockerdotnet'
+              //customWorkspace '/some/other/path'
+      }
+    }
+          
+    stages {
+      stage('CheckOut') {
+        steps {
+          checkout scm
+          sh 'ls -la'
+          sh "echo MINHA BRANCH É ${GIT_BRANCH}"
+        }
+      }
+      
+      stage('Testes') {
+        steps {
+          sh "echo executar testes"  
+            
+        }
+      }
+      
+      stage('Analise codigo') {
+        steps {
+          sh 'dotnet-sonarscanner begin /k:"SME-Pedagogico-Gestao-DEV" /d:sonar.host.url="http://automate.educocoa.intranet:9000" /d:sonar.login="b508b5e2675012bb5077f4dd5e3a8854a4472a99"'
+          sh 'dotnet build'
+          sh 'dotnet-sonarscanner end /d:sonar.login="b508b5e2675012bb5077f4dd5e3a8854a4472a99"'
+        }
+      }
+    }
+}
