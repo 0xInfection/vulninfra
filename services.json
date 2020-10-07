@@ -1,0 +1,40 @@
+{
+    "project_info": {
+      "project_number": "111465651350",
+      "firebase_url": "https://shifta-a19a0.firebaseio.com",
+      "project_id": "shifta-a12a0",
+      "storage_bucket": "shifta-a12a0.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:111465651350:android:1cc7a91aa68111fc7276b7",
+          "android_client_info": {
+            "package_name": "com.example.shifta"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "111465651350-1jeo2rg0kidbdat2adlgd9hvqod725nt.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyA20YldZYWiAbdgfVKhD7g1FX8mKa36sy4"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "111465651350-1jeo2rg0kidbdat2adldg9hvqo7d25nt.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
