@@ -1,5 +1,5 @@
 # vulninfra
-For finding secrets, tokens and other common mistakes made by developers.
+For finding secrets, tokens and other common mistakes made by developers. Any automated code scanner should be able to pick the secrets within this repo.
 > Note that all content in this repo contains just things for demo purposes only. All these tokens here are meant to simulate real life tokens and are invalid in nature.
 
 Contents:
@@ -9,3 +9,4 @@ Contents:
 - `run.js` - Contains mongodb creds.
 - `services.json` - Contains Google Cloud API key, OAuth Secrets.
 - `clientcs.cs` - Contains internal database creds.
+- `.env` - Environment file containing database passwords, secrets.
