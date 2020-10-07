@@ -30,10 +30,8 @@ namespace CluedIn.ExternalSearch.Providers.CVR.Client
 
         private T CallCvr<T>(Func<Uri, T> searchFunc)
         {
-            // var uri = new Uri("http://CluedIn_CVR_I_SKYEN:cb4821e8-bee2-45fe-8b9d-27cd6c4eff66@distribution.virk.dk/cvr-permanent/_search");
-
             var endpoint        = ConfigurationManager.AppSettings["Providers.ExternalSearch.CVR.EndPoint"];
-            var endpointLive    = ConfigurationManager.AppSettings["Providers.ExternalSearch.CVR.LiveEndPoint"] ?? "http://CluedIn_CVR_I_SKYEN:cb4821e8-bee2-45fe-8b9d-27cd6c4eff66@distribution.virk.dk/cvr-permanent/_search";
+            var endpointLive    = ConfigurationManager.AppSettings["Providers.ExternalSearch.CVR.LiveEndPoint"] ?? "http://CluedIn_CVR_I_SKYEN:cb4821e8-bee2-54ef-8b9d-27cd6c4eff66@distribution.virk.dk/cvr-permanent/_search";
 
             T result = default(T);
 
