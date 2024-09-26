@@ -10,7 +10,8 @@
         "client_info": {
           "mobilesdk_app_id": "1:111465651350:android:1cc7a91aa68111fc7276b7",
           "android_client_info": {
-            "package_name": "com.example.shifta"
+            "package_name": "com.example.shifta",
+            "bucket_url": "fake-bucket.s3.amazonaws.com"
           }
         },
         "oauth_client": [
